@@ -1,10 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --default: #fff;
     --destaque: #f00;
     --font-def: "bebas neue", sans-serif;
+    --font-sec: "Poppins", "sans-serif";
 }
 
 * {
@@ -26,16 +28,22 @@ body {
 
 header {
     display: flex;
-    position: fixed; 
+    position: fixed;
     top: 0;
     width: 100%;
     padding: 16px 98px;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #e2e2e2;
-    background: transparent; 
-    z-index: 10; 
+    background: transparent;
+    transition: background-color 0.3s ease;
+    z-index: 10;
 }
+header.scrolled{
+    background-color: #121212;
+}
+
+
 
 header #logo {
     height: 32px;
@@ -43,6 +51,7 @@ header #logo {
     flex-shrink: 0;
     cursor: pointer;
 }
+
 
 header nav ul {
     list-style: none;
@@ -96,14 +105,14 @@ header nav ul li:hover {
 
 .swiper {
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: 0;
 }
 
 .swiper-slide {
-    position: relative; 
+    position: relative;
 }
 
 .swiper-slide::before {
@@ -113,11 +122,9 @@ header nav ul li:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        to right, 
-        rgba(0, 0, 0, 0.8) 0%, 
-        rgba(0, 0, 0, 0.1) 100% 
-    );
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.1) 100%);
     z-index: 2;
 }
 
@@ -128,4 +135,173 @@ header nav ul li:hover {
     object-fit: cover;
     position: relative;
     z-index: 1;
+}
+
+.msg-container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    text-align: left;
+}
+
+.msg-container h1 {
+    color: #FFF;
+    font-family: var(--font-def);
+    font-size: 7em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116px;
+    width: 598px;
+}
+
+.msg-container h1>span {
+    color: var(--destaque);
+}
+
+.msg-container p {
+    color: #f1f1f1af;
+    font-family: var(--font-sec);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    max-width: 600px;
+}
+
+.start-btn2 {
+    display: inline-flex;
+    background-color: transparent;
+    margin-top: 10px;
+    padding: 24px 40px;
+    align-items: flex-start;
+    gap: 8px;
+    border: 1px solid var(--destaque);
+    color: #F00;
+
+    font-family: var(--font-def);
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 1s;
+
+}
+
+.start-btn2:hover {
+    background-color: var(--destaque);
+    color: var(--default);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+.msg-info {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 30px;
+    border-right: 1px solid #ccc;
+    padding: 15px;
+}
+
+.msg-info p:first-child {
+    color: var(--destaque);
+    font-family: var(--font-def);
+    font-size: 59px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.msg-info:last-child {
+    border: none;
+}
+
+.abbout-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.abbout {
+    background: #121212;
+    padding: 30px;
+}
+
+.abbout h2 {
+    color: var(--default);
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 91px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 96px;
+    text-transform: uppercase;
+    padding: 30px;
+}
+
+.abbout h2>span {
+    color: var(--destaque);
+}
+
+.abbout #up {
+    color: #f1f1f1af;
+    text-align: center;
+    font-family: var(--font-sec);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    width: 600px;
+    margin: 0 auto;
+
+}
+
+.abbout-card {
+    border: 1px solid var(--destaque);
+    display: flex;
+    width: 100%;
+    padding: 24px 40px;
+    flex-direction: column;
+    margin-top: 5%;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.abbout-card p:first-child {
+    color: #FFF;
+    font-family: "Bebas Neue";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.abbout-card h5 {
+    color: var(--destaque);
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.abbout-card p {
+    color: #f1f1f1af;
+    font-family: var(--font-sec);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
 }

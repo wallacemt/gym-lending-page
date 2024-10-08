@@ -1,0 +1,7 @@
+Bibliotecas Externas Recomendadas
+
+    Swiper.js ou Slick Slider (para o carrosselslider).
+    AOS.js (para animações ao rolar a página).
+    Bootstrap ou Tailwind CSS (para design responsivo e componentes prontos).
+
+    EmailJS (para envio de emails diretamente pelo formulário de contato).
