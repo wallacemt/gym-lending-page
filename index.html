@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iron Gym</title>
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -15,11 +15,11 @@
             <a href="#"><img src="./assets/img/logo.svg" alt="Logo da pagina" id="logo"></a>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Serviços</li>
-                    <li>Treinadores</li>
-                    <li>Avaliações</li>
-                    <li>Contato</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="">Serviços</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Avaliações</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
             <button class="start-btn">Começar agora</button>
@@ -32,7 +32,7 @@
                 <div class="swiper-slide"><img src="./assets/img/slide-4.jpg" alt="Imagem do carrosel "></div>
             </div>
         </div>
-        <div class="msg-container">
+        <div class="msg-container" data-aos="fade-up" data-aos-duration="3000">
             <h1>PRONTO PARA TREINAR <br><span>SEU CORPO</span></h1>
             <p>O treinamento de ginástica é uma abordagem estruturada e disciplinada ao exercício físico que se concentra na força,
                 resistência e melhoria geral do condicionamento físico.</p>
@@ -54,35 +54,93 @@
     </div>
 
     <main>
-        <section class="abbout">
+        <section class="choose-us" 
+        data-aos="zoom-in"
+        data-aos-duration="2000">
             <h2>Por que <span>nos escolher</span></h2>
             <p id="up">Os treinos de academia oferecem uma experiência versátil e personalizável, permitindo que todos estabeleçam metas de condicionamento físico específicas.</p>
-            <div class="abbout-card-container">
-                <div class="abbout-card">
+            <div class="choose-us-card-container">
+                <div class="choose-us-card">
                     <p>01</p>
                     <h5>Personal Trainer</h5>
                     <p>Os treinos de academia oferecem uma experiência versátil e personalizável, permitindo que todos estabeleçam metas de condicionamento físico específicas.</p>
                 </div>
-                <div class="abbout-card">
+                <div class="choose-us-card">
                     <p>02</p>
                     <h5>Acompanhamento Nutricional</h5>
                     <p>Nossas academias oferecem sessões de treinamento personalizadas com personal trainers certificados que criam planos de treino personalizados com base em objetivos individuais</p>
                 </div>
-                <div class="abbout-card">
+                <div class="choose-us-card">
                     <p>03</p>
                     <h5>Equipamentos e instalações</h5>
                     <p>Nossas academias oferecem sessões de treinamento personalizadas com personal trainers certificados que criam planos de treino personalizados com base em objetivos individuais</p>
                 </div>
-                <div class="abbout-card">
+                <div class="choose-us-card">
                     <p>04</p>
                     <h5>Programas Especializados</h5>
                     <p>Nossas academias oferecem sessões de treinamento personalizadas com personal trainers certificados que criam planos de treino personalizados com base em objetivos individuais</p>
                 </div>
+            </div>  
+            
+        </section>
+
+        <section class="about-us">
+            <div class="about-us-container">
+                <div class="about-us-image">
+                    <img src="./assets/img/about.png" alt="Placeholder Image"/>
+                </div>
+        
+                <div class="about-us-content">
+                    <div class="about-us-title">
+                        <span class="text-white">Temos muita</span><br>
+                        <span class="text-red">Experiencia</span>
+                    </div>
+                    <div class="about-us-description">
+                        <p style="color: #fff;">Na nossa jornada, acumulamos anos de experiência ajudando pessoas a alcançarem seus objetivos. Seja em projetos grandes ou pequenos, nossa equipe se dedica a fornecer as melhores soluções, sempre com foco em qualidade e inovação.</p>
+    
+                        <p>Valorizamos a colaboração e acreditamos que o sucesso é alcançado quando trabalhamos juntos. Nossa missão é transformar ideias em realidade, superando desafios com criatividade e eficiência.
+                        Estamos sempre em busca de novas oportunidades para crescer e aprender. Junte-se a nós nessa trajetória e descubra como podemos fazer a diferença juntos!</p>
+                    </div>
+                    <button class="start-btn2">Sobre Nós</button>
+                </div>
+        
             </div>
         </section>
+
+      <section class="avaliacoes">
+            <div class="avaliacoes-title">
+                <h2>O Que Nossos <span class="text-red">Clientes Dizem</span></h2>
+            </div>
+
+            <div class="customer-reviews-container">
+                <div class="swiper-container-reviews">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide review-card">
+                            <p class="review-text">
+                            </p>
+                            <div class="review-stars">
+                            </div>
+                            <div class="review-client-name"></div>
+                            <div class="review-client">
+                                <img src="" alt="Client Image" class="client-img"/>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+      </section>
+
+
+      <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus at dolor voluptatem? Nostrum iure nemo cupiditate odit quos! Eveniet reiciendis voluptas repellendus eligendi officia quia rerum facilis. Veritatis, ad voluptates.</p>
+      </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/scripts/srcipts.js"></script>
     <script src="./assets/scripts/frameworks/script.js"></script>
 </body>

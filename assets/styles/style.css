@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
     --default: #fff;
@@ -19,6 +19,7 @@ body {
     height: 100vh;
     background-color: #000;
     font-family: var(--font-def);
+    overflow-x: hidden;
 }
 
 .container {
@@ -39,11 +40,9 @@ header {
     transition: background-color 0.3s ease;
     z-index: 10;
 }
-header.scrolled{
+header.scrolled {
     background-color: #121212;
 }
-
-
 
 header #logo {
     height: 32px;
@@ -51,7 +50,6 @@ header #logo {
     flex-shrink: 0;
     cursor: pointer;
 }
-
 
 header nav ul {
     list-style: none;
@@ -61,11 +59,7 @@ header nav ul {
     gap: 40px;
 }
 
-header nav ul li:first-child {
-    color: var(--destaque);
-}
-
-header nav ul li {
+header nav ul li a {
     color: #fff;
     text-align: center;
     cursor: pointer;
@@ -73,9 +67,14 @@ header nav ul li {
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
+    text-decoration: none;
+}
+header nav ul li:first-child a {
+    color: var(--destaque);
 }
 
-header nav ul li:hover {
+
+header nav ul li a:hover {
     color: var(--destaque);
 }
 
@@ -102,7 +101,6 @@ header nav ul li:hover {
     transition: 1s;
 }
 
-
 .swiper {
     width: 100%;
     height: 100vh;
@@ -122,9 +120,11 @@ header nav ul li:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right,
-            rgba(0, 0, 0, 0.8) 0%,
-            rgba(0, 0, 0, 0.1) 100%);
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
     z-index: 2;
 }
 
@@ -151,7 +151,7 @@ header nav ul li:hover {
 }
 
 .msg-container h1 {
-    color: #FFF;
+    color: #fff;
     font-family: var(--font-def);
     font-size: 7em;
     font-style: normal;
@@ -160,7 +160,7 @@ header nav ul li:hover {
     width: 598px;
 }
 
-.msg-container h1>span {
+.msg-container h1 > span {
     color: var(--destaque);
 }
 
@@ -182,7 +182,7 @@ header nav ul li:hover {
     align-items: flex-start;
     gap: 8px;
     border: 1px solid var(--destaque);
-    color: #F00;
+    color: #f00;
 
     font-family: var(--font-def);
     font-size: 21px;
@@ -192,7 +192,6 @@ header nav ul li:hover {
     cursor: pointer;
     border-radius: 5px;
     transition: 1s;
-
 }
 
 .start-btn2:hover {
@@ -201,7 +200,6 @@ header nav ul li:hover {
     transform: scale(1.1);
     transition: 1s;
 }
-
 
 .msg-info {
     display: inline-flex;
@@ -227,21 +225,23 @@ header nav ul li:hover {
     border: none;
 }
 
-.abbout-card-container {
+
+
+.choose-us-card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.abbout {
+.choose-us {
     background: #121212;
     padding: 30px;
 }
 
-.abbout h2 {
+.choose-us h2 {
     color: var(--default);
     text-align: center;
-    font-family: "Bebas Neue";
+    font-family: var(--font-def);
     font-size: 91px;
     font-style: normal;
     font-weight: 700;
@@ -250,11 +250,11 @@ header nav ul li:hover {
     padding: 30px;
 }
 
-.abbout h2>span {
+.choose-us h2 > span {
     color: var(--destaque);
 }
 
-.abbout #up {
+.choose-us #up {
     color: #f1f1f1af;
     text-align: center;
     font-family: var(--font-sec);
@@ -264,10 +264,9 @@ header nav ul li:hover {
     line-height: 24px;
     width: 600px;
     margin: 0 auto;
-
 }
 
-.abbout-card {
+.choose-us-card {
     border: 1px solid var(--destaque);
     display: flex;
     width: 100%;
@@ -278,30 +277,185 @@ header nav ul li:hover {
     gap: 24px;
 }
 
-.abbout-card p:first-child {
-    color: #FFF;
-    font-family: "Bebas Neue";
+.choose-us-card p:first-child {
+    color: #fff;
+    font-family: var(--font-def);
     font-size: 38px;
     font-style: normal;
     font-weight: 700;
     line-height: 48px;
 }
 
-.abbout-card h5 {
+.choose-us-card h5 {
     color: var(--destaque);
     text-align: center;
-    font-family: "Bebas Neue";
+    font-family: var(--font-def);
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
     line-height: 32px;
 }
 
-.abbout-card p {
+.choose-us-card p {
     color: #f1f1f1af;
     font-family: var(--font-sec);
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: 24px;
+}
+
+
+.about-us{
+    background-image: url("../img/abbout-back.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about-us-container {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0 auto;
+    padding: 50px 20px; 
+    background-color: #121212f0;
+    
+}
+
+.about-us-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-image img {
+    width: 80%;
+    border-radius: 10px;    
+}
+.about-us-content {
+    flex: 1.5; 
+    padding-left: 40px; 
+}
+.about-us-title {
+    font-size: 48px;
+    font-family: var(--font-def);
+    font-weight: 700;
+    line-height: 82px;
+    margin-bottom: 20px; 
+}
+
+.text-white {
+    color: var(--default);
+    font-size: 91px;
+}
+
+.text-red {
+    color: var(--destaque);
+    font-size: 91px;
+}
+
+.about-us-description {
+    width: 602px;
+    margin-top: 20px;
+    color: var(--default);
+    font-size: 16px;
+    font-family: var(--font-sec);
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.about-us-description p {
+    margin-bottom: 20px;
+    color: #e0e0e0;
+    font-family: var(--font-sec);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.avaliacoes {
+    background-image: url("../img/reviews-back.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    height: auto;
+}
+
+.avaliacoes-title h2{
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-family: var(--font-def);
+    font-size: 91px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 96px;
+    text-transform: uppercase;
+}
+.avaliacoes-title:last-child{
+    color: var(--destaque);
+}
+
+.avaliacoes-title p{
+    color: var(--default);
+    text-align: center;
+    font-size: 16px;
+    font-family: var(--font-sec);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    width: 600px;
+    margin: 20px auto;
+}
+
+.customer-reviews-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.swiper-container-reviews {
+    width: 100%;
+}
+
+.swiper-container-reviews .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    background-color: #121212f0;
+    height: auto;    
+}
+
+.review-text {
+    font-size: 16px;
+    font-family: var(--font-sec);
+    width: 50%;
+    margin-bottom: 15px;
+    color: var(--default);
+    z-index: 2;
+}
+
+.review-stars {
+    font-size: 24px;
+    color: gold;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+.review-client-name {
+    font-size: 34px;
+    color: var(--default);
+    z-index: 2;
+}
+.review-client .client-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid var(--destaque);
+    object-fit: cover;
+    z-index: 2;
 }
