@@ -8,42 +8,65 @@ window.addEventListener("scroll", () => {
     }
 });
 
-const placeId = "ChIJ_b0SMKTQmwARPTj2a-uC4So";
-const apiKey = "AIzaSyCrFeev14_VsyACy7vpbeSd_20VHrk5PWk";
-
-async function fetchPlaceDetails() {
-    try {
-        const response = await fetch(
-            `https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ_b0SMKTQmwARPTj2a-uC4So&key=AIzaSyCrFeev14_VsyACy7vpbeSd_20VHrk5PWk`
-        );
-        const data = await response.json();
-
-        if (data && data.result) {
-            const reviews = data.result.reviews;
-            reviews.forEach((review) => {
-                populateReviewCard(review);
-            });
-        }
-    } catch (error) {
-        console.error("Erro ao buscar os detalhes do local:", error);
-    }
-}
 
 
 function populateReviewCard(review) {
-    document.querySelector(".review-text").innerHTML = `"${review.text}"`;
-    document.querySelector(".review-client-name").innerHTML = `${review.author_name}`;
+    const reviewCardTemplate = document.createElement('div');
+    reviewCardTemplate.classList.add('swiper-slide', 'review-card');
 
-    if (review.profile_photo_url) {
-        document.querySelector(".client-img").src = review.profile_photo_url;
+    const reviewText = document.createElement('p');
+    reviewText.classList.add('review-text');
+    const text = review.text;
+
+    const truncatedText = text;
+    reviewText.innerHTML = `"${truncatedText}"`;
+
+
+    const reviewStars = document.createElement('div');
+    reviewStars.classList.add('review-stars');
+    let starHtml = '';
+    for (let i = 0; i < review.rating; i++) {
+        starHtml += '⭐';
     }
-    const starCount = review.rating;
-    let starHtml = "";
-    for (let i = 0; i < starCount; i++) {
-        starHtml += "⭐";
+    reviewStars.innerHTML = starHtml;
+
+    const reviewClientName = document.createElement('div');
+    reviewClientName.classList.add('review-client-name');
+    reviewClientName.innerHTML = review.author_name;
+
+    const reviewClient = document.createElement('div');
+    reviewClient.classList.add('review-client');
+    const clientImg = document.createElement('img');
+    clientImg.classList.add('client-img');
+    clientImg.src = review.profile_photo_url || 'path/to/default-avatar.jpg'; 
+    reviewClient.appendChild(clientImg);
+
+    reviewCardTemplate.appendChild(reviewText);
+    reviewCardTemplate.appendChild(reviewStars);
+    reviewCardTemplate.appendChild(reviewClientName);
+    reviewCardTemplate.appendChild(reviewClient);
+
+    document.querySelector("#reviews-wraper").appendChild(reviewCardTemplate);
+ 
+}
+
+async function fetchPlaceDetails() {
+    try {
+        const response = await fetch('./assets/scripts/reviews.json');
+        const data = await response.json();
+
+        if (data.result.reviews) {
+            let reviews = data.result.reviews;
+            console.log(reviews)
+            for (let review of reviews) {
+                if (review.text.length > 20 && review.rating > 3) {
+                    populateReviewCard(review);
+                }
+            }
+        }
+    } catch (error) {
+        console.error("Erro ao buscar o arquivo JSON:", error);
     }
-    document.querySelector(".review-stars").innerHTML = starHtml;
-    document.querySelector(".swiper-wrapper").appendChild(reviewCardTemplate);
 }
 
 document.addEventListener("DOMContentLoaded", fetchPlaceDetails);

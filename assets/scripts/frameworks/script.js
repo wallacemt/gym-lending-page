@@ -26,31 +26,25 @@ let  swiperReviews = new Swiper('.swiper-container-reviews', {
     },
 });
 
-// const swiperAvaliacoes = new Swiper('.swiper-container-reviews', {
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true,
-//         dynamicBullets: true,
-//         dynamicMainBullets: 2,
-//     },
-//     breakpoints: {
-//         640: {
-//             slidesPerView: 1,
-//             spaceBetween: 10,
-//         },
-//         768: {
-//             slidesPerView: 2,
-//             spaceBetween: 5,
-//         },
-//         1024: {
-//             slidesPerView: 2,
-//             spaceBetween: 10,
-//         },
-//     },
-//     // autoplay: {
-//     //     delay: 2000,
-//     // },
-// });
+const swiperAvaliacoes = new Swiper('.swiper-container-reviews', {
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 25,
+        },
+        1024: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+    },
+    autoplay: {
+        delay: 2000,
+    },
+});
 
 AOS.init();
 AOS.init({

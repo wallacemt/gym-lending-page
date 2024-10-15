@@ -1,0 +1,492 @@
+{
+   "html_attributions" : [],
+   "result" : 
+   {
+      "address_components" : 
+      [
+         {
+            "long_name" : "337",
+            "short_name" : "337",
+            "types" : 
+            [
+               "street_number"
+            ]
+         },
+         {
+            "long_name" : "Rua dos Colibrís",
+            "short_name" : "R. dos Colibrís",
+            "types" : 
+            [
+               "route"
+            ]
+         },
+         {
+            "long_name" : "Imbuí",
+            "short_name" : "Imbuí",
+            "types" : 
+            [
+               "sublocality_level_1",
+               "sublocality",
+               "political"
+            ]
+         },
+         {
+            "long_name" : "Salvador",
+            "short_name" : "Salvador",
+            "types" : 
+            [
+               "administrative_area_level_2",
+               "political"
+            ]
+         },
+         {
+            "long_name" : "Bahia",
+            "short_name" : "BA",
+            "types" : 
+            [
+               "administrative_area_level_1",
+               "political"
+            ]
+         },
+         {
+            "long_name" : "Brasil",
+            "short_name" : "BR",
+            "types" : 
+            [
+               "country",
+               "political"
+            ]
+         },
+         {
+            "long_name" : "41720-060",
+            "short_name" : "41720-060",
+            "types" : 
+            [
+               "postal_code"
+            ]
+         }
+      ],
+      "adr_address" : "\u003cspan class=\"street-address\"\u003eR. dos Colibrís, 337\u003c/span\u003e - \u003cspan class=\"extended-address\"\u003eImbuí\u003c/span\u003e, \u003cspan class=\"locality\"\u003eSalvador\u003c/span\u003e - \u003cspan class=\"region\"\u003eBA\u003c/span\u003e, \u003cspan class=\"postal-code\"\u003e41720-060\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eBrasil\u003c/span\u003e",
+      "business_status" : "OPERATIONAL",
+      "current_opening_hours" : 
+      {
+         "open_now" : true,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "date" : "2024-10-20",
+                  "day" : 0,
+                  "time" : "1400"
+               },
+               "open" : 
+               {
+                  "date" : "2024-10-20",
+                  "day" : 0,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "date" : "2024-10-14",
+                  "day" : 1,
+                  "time" : "2300"
+               },
+               "open" : 
+               {
+                  "date" : "2024-10-14",
+                  "day" : 1,
+                  "time" : "0500"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "date" : "2024-10-15",
+                  "day" : 2,
+                  "time" : "2300"
+               },
+               "open" : 
+               {
+                  "date" : "2024-10-15",
+                  "day" : 2,
+                  "time" : "0500"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "date" : "2024-10-16",
+                  "day" : 3,
+                  "time" : "2300"
+               },
+               "open" : 
+               {
+                  "date" : "2024-10-16",
+                  "day" : 3,
+                  "time" : "0500"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "date" : "2024-10-17",
+                  "day" : 4,
+                  "time" : "2300"
+               },
+               "open" : 
+               {
+                  "date" : "2024-10-17",
+                  "day" : 4,
+                  "time" : "0500"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "date" : "2024-10-18",
+                  "day" : 5,
+                  "time" : "2300"
+               },
+               "open" : 
+               {
+                  "date" : "2024-10-18",
+                  "day" : 5,
+                  "time" : "0500"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "date" : "2024-10-19",
+                  "day" : 6,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "date" : "2024-10-19",
+                  "day" : 6,
+                  "time" : "0800"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "segunda-feira: 05:00 – 23:00",
+            "terça-feira: 05:00 – 23:00",
+            "quarta-feira: 05:00 – 23:00",
+            "quinta-feira: 05:00 – 23:00",
+            "sexta-feira: 05:00 – 23:00",
+            "sábado: 08:00 – 17:00",
+            "domingo: 08:00 – 14:00"
+         ]
+      },
+      "formatted_address" : "R. dos Colibrís, 337 - Imbuí, Salvador - BA, 41720-060, Brasil",
+      "geometry" : 
+      {
+         "location" : 
+         {
+            "lat" : -12.9716562,
+            "lng" : -38.439278
+         },
+         "viewport" : 
+         {
+            "northeast" : 
+            {
+               "lat" : -12.9703183197085,
+               "lng" : -38.43789326970851
+            },
+            "southwest" : 
+            {
+               "lat" : -12.9730162802915,
+               "lng" : -38.4405912302915
+            }
+         }
+      },
+      "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color" : "#7B9EB0",
+      "icon_mask_base_uri" : "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name" : "Academia Smart Fit - Imbuí I",
+      "opening_hours" : 
+      {
+         "open_now" : true,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "day" : 0,
+                  "time" : "1400"
+               },
+               "open" : 
+               {
+                  "day" : 0,
+                  "time" : "0800"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 1,
+                  "time" : "2300"
+               },
+               "open" : 
+               {
+                  "day" : 1,
+                  "time" : "0500"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 2,
+                  "time" : "2300"
+               },
+               "open" : 
+               {
+                  "day" : 2,
+                  "time" : "0500"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 3,
+                  "time" : "2300"
+               },
+               "open" : 
+               {
+                  "day" : 3,
+                  "time" : "0500"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 4,
+                  "time" : "2300"
+               },
+               "open" : 
+               {
+                  "day" : 4,
+                  "time" : "0500"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 5,
+                  "time" : "2300"
+               },
+               "open" : 
+               {
+                  "day" : 5,
+                  "time" : "0500"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 6,
+                  "time" : "1700"
+               },
+               "open" : 
+               {
+                  "day" : 6,
+                  "time" : "0800"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "segunda-feira: 05:00 – 23:00",
+            "terça-feira: 05:00 – 23:00",
+            "quarta-feira: 05:00 – 23:00",
+            "quinta-feira: 05:00 – 23:00",
+            "sexta-feira: 05:00 – 23:00",
+            "sábado: 08:00 – 17:00",
+            "domingo: 08:00 – 14:00"
+         ]
+      },
+      "photos" : 
+      [
+         {
+            "height" : 1080,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106191693329810126458\"\u003eAcademia Smart Fit - Imbuí I\u003c/a\u003e"
+            ],
+            "photo_reference" : "AdCG2DM3ECrrnLmbK_SoZzQZUpSjTOD8cPdB8WGljUN7g-oWBjT-IANqB2cmuvizz8tOWYYmM2y3T7JViArVGdaYSQHCzBRp2QldwYKGdSdhPqai5shL9hsjOwaYtQ6WrevuwytoC-TzFbCDyEkXZpghHqmw9cwKYStxOxo_JeGQ4elUB9ZE",
+            "width" : 1920
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115681837859478648193\"\u003eItarcio A. L.\u003c/a\u003e"
+            ],
+            "photo_reference" : "AdCG2DMCvEuqu7uzWqqXiK3T6ZWc2qhPjG8_Vvc9gNvHz35Lo9tXsOED97sKISCiQw4iSHlE9bzoR2LSHoawx_bO6lXS9YtlCSy5fzdkO7KEljtDQ4t1LLbTuU5b_-quzHQny2BeaHrY7l4q_UuBhCv5oTEw7e3dMWTB2V0xkEV4zuOqkFir",
+            "width" : 3024
+         },
+         {
+            "height" : 720,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/102410676821522356628\"\u003eCaio Dantas\u003c/a\u003e"
+            ],
+            "photo_reference" : "AdCG2DO6d0lRSsZdXxh-HgoKci1VMHKQ1gLqhL6SARZGAZFjRrF0Sk8V7X-73PXDhm-YfEBqNi8EWww4yg9g_buPJ46H_EyINk5Arbb8_WZ_lws8onFLumEGsV-9dS51A4S5GxlLkCNMp9tmdYUlGCS6KSbwDsVTl4OHf5E8FIuDduw5XK-0",
+            "width" : 1280
+         },
+         {
+            "height" : 4160,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106940375745541391663\"\u003ePriscilla Cunha\u003c/a\u003e"
+            ],
+            "photo_reference" : "AdCG2DMl-zQ1Iq4p9vLCwFuDo3M5eQg0oc0if3OIcTZvWlKvtXutBf7re4gZwQQVqg0tOfi2nlIVcLDLI06iUoEjwVFzUj-c-aZ8DZfpcCa-SbI4oRfEbZFk-EILlz9qBQyb7SbRy_39oyIZ9tvCAV3oMs3p-5PwfEW39pORIKszBrzF6bMS",
+            "width" : 3120
+         },
+         {
+            "height" : 4624,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/108850557952658556269\"\u003eeliezer santos\u003c/a\u003e"
+            ],
+            "photo_reference" : "AdCG2DOTr9YKmreOAi7l1--OxuHon64oMP1UgwdE2XnseyrdoYBY4JpnbTo6PcTDdeRyhBrYPnh6GvvF33goZ8a73UOLPymG1frjj99LF9O7p7V27YpbXLSp_4SNGhKiOWS1kRRUXXVei6xjipgZradnjbhwnRlaUtVHCwcEpZ3JLlwjKZwm",
+            "width" : 3468
+         },
+         {
+            "height" : 1080,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106191693329810126458\"\u003eAcademia Smart Fit - Imbuí I\u003c/a\u003e"
+            ],
+            "photo_reference" : "AdCG2DN_DWX_TYltnqXaOpo4u1ObfcZ4Rs6NoIomzBAPXElK1dWn8iUkYz7o7VbCWMs0ab76nlwy6k-ANXyDrO1Fz8BaEey3oRLDxvOyDCDPmSFzrZPymQqarWMkTFhRxjE4Q9uj6yuQFQ3WZM1TN2Sju4_pm8zxKpI-dyKLiyAElVBz2IuM",
+            "width" : 1920
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115681837859478648193\"\u003eItarcio A. L.\u003c/a\u003e"
+            ],
+            "photo_reference" : "AdCG2DOA68x8dhG_ZCMFnv71ChvP2OAHrfwa_Sm2AUtIeKRHlJpwMjy0U2B6hWQus6EHsX4x0ymmuawXBFLqk_BRimWhIM7-bELmQrm4t0azHhDRsCzNAwo77s9PN9cn-6Euy7n8bX_7wrnSlLMcco7zGB8Imwx9PtsiChjykGUHPBdRjvUP",
+            "width" : 3024
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115681837859478648193\"\u003eItarcio A. L.\u003c/a\u003e"
+            ],
+            "photo_reference" : "AdCG2DNUkawLYCxv5cZylx6-J1IZJDou566vPcY2_SwDikKcQtJo8pdbslKBc5eRc9VFeZwClahp0sUFd1yoGQEEnhEJ3o6rK8QqTDo0AEXvAFuKu-3zboy3YLrj0RAqPSK5702uAVXA3gnWU3ANRUgnozYOpXfW3gMlAHwtGwCiC54fMbH8",
+            "width" : 3024
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115681837859478648193\"\u003eItarcio A. L.\u003c/a\u003e"
+            ],
+            "photo_reference" : "AdCG2DNGR1I3QSrdmI3MS6M2PsO4LzqFD7ZcXotPRU7MQXef42HebpM_X7ucgTC8uW2pn08RoTSLNHX-i3VKMqcXGmdY03Xk1i-Xka8vGEZ9yUpnmAEe8Q0STBbjeNIJniAkQiRs09WttWfIJ7mi3s59GJq_eZ5p1kTI4gK6otdc53Cqd_cn",
+            "width" : 3024
+         },
+         {
+            "height" : 2448,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101871143803752874601\"\u003eGill Trindade\u003c/a\u003e"
+            ],
+            "photo_reference" : "AdCG2DOUoiEGodFlMJ6C-oJtTwQuOPw_6AHIDdHiHb2NgnxF55CqN52BuK2OGgjwZETPpBzuPcdj2M29yqjY2FPh_U8gJJX5K9B5c_Umi6LI0v19k6Kjr9DOmUu08_4PZXGpXUmqLydqIGK_OqVFNaJn-gCgHLH5m1o9fnz_eHjkkUUnzU1B",
+            "width" : 3264
+         }
+      ],
+      "place_id" : "ChIJUSWhso4_WpMRubczRim7Et8",
+      "plus_code" : 
+      {
+         "compound_code" : "2HH6+87 Imbuí, Salvador - BA, Brasil",
+         "global_code" : "59V32HH6+87"
+      },
+      "rating" : 4.5,
+      "reference" : "ChIJUSWhso4_WpMRubczRim7Et8",
+      "reviews" : 
+      [
+         {
+            "author_name" : "Luma Paraíso",
+            "author_url" : "https://www.google.com/maps/contrib/111412019412365353264/reviews",
+            "language" : "pt",
+            "original_language" : "pt",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjVDiy8k1M17RFxR4xnDkMBGHTXDezH8kuxzOgXS6H_fLG04mw06dg=s128-c0x00000000-cc-rp-mo-ba4",
+            "rating" : 5,
+            "relative_time_description" : "3 meses atrás",
+            "text" : "Fui pela primeira vez, gostei bastante do atendimento, a academia estava vazia, não sei se pelo horário (em torno das 14h), mas foi uma experiência agradável. Limpa e aparentemente todos os aparelhos funcionando normalmente.",
+            "time" : 1721060154,
+            "translated" : false
+         },
+         {
+            "author_name" : "Edilene",
+            "author_url" : "https://www.google.com/maps/contrib/110580713125815662210/reviews",
+            "language" : "pt",
+            "original_language" : "pt",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjVf-byay6GB7fnskr7QJIEzjMDjcA3rlsR3tjhX19kkX4aGI_Y=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "um ano atrás",
+            "text" : "Minha experiência com a unidade smartfiy sempre foi positiva, lugar agradável, bem equipado, profissionais qualificados e as aulas de ginástica são ministradas por professores maravilhosos.",
+            "time" : 1674009737,
+            "translated" : false
+         },
+         {
+            "author_name" : "José Carlos Noronha",
+            "author_url" : "https://www.google.com/maps/contrib/113400259448114437534/reviews",
+            "language" : "pt",
+            "original_language" : "pt",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjVOd5BfkiQV0nVAEP0btJmeDwA20-jDcGphKfM8jukkkmDa1ZA_=s128-c0x00000000-cc-rp-mo",
+            "rating" : 1,
+            "relative_time_description" : "8 meses atrás",
+            "text" : "Academia é boa, porém cheia demais. Você precisa ficar esperando em fila pra usar os aparelhos, o período de descanso entre um aparelho e outro acaba sendo bem grande.",
+            "time" : 1706703868,
+            "translated" : false
+         },
+         {
+            "author_name" : "Acson Sousa Santos",
+            "author_url" : "https://www.google.com/maps/contrib/104886804758644168264/reviews",
+            "language" : "pt",
+            "original_language" : "pt",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjUTqLnVVT4FzMdcpmhG8uwaPWs6wk9JDq3iVxzVCpoItCLnd0VAug=s128-c0x00000000-cc-rp-mo-ba5",
+            "rating" : 5,
+            "relative_time_description" : "8 meses atrás",
+            "text" : "A Smart Fit é um verdadeiro santuário de transformação, onde cada gota de suor é um testemunho da minha dedicação incansável à saúde e ao bem-estar. Com equipamentos de ponta e instrutores dedicados, é o lugar onde os meus sonhos de condicionamento físico se tornam realidade. A cada passo, me aproximo da minha melhor versão, e a Smart Fit é o meu parceiro nessa jornada de superação e conquista.",
+            "time" : 1706472508,
+            "translated" : false
+         },
+         {
+            "author_name" : "Wallace Morais",
+            "author_url" : "https://www.google.com/maps/contrib/108499657916147671042/reviews",
+            "language" : "pt",
+            "original_language" : "pt",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocKE9SZ8CWwBrfD2qbkQ3hQGBhH5_-RNKMgjQQVqqkqafGMMTA=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "10 meses atrás",
+            "text" : "Academia boa, só precisa melhorar um pouco os ar-condicionados, não posso deixar de fazer um elogio especial para o professor Rodrigo, profissional qualificado e atencioso, treino a 1 ano e foi o único que foi prestativo e atencioso comigo durante todo esse período.",
+            "time" : 1702580196,
+            "translated" : false
+         }
+      ],
+      "types" : 
+      [
+         "gym",
+         "health",
+         "point_of_interest",
+         "establishment"
+      ],
+      "url" : "https://maps.google.com/?cid=16074115805984569273",
+      "user_ratings_total" : 809,
+      "utc_offset" : -180,
+      "vicinity" : "Rua dos Colibrís, 337 - Imbuí, Salvador",
+      "website" : "https://www.smartfit.com.br/academias/imbui-i/?utm_source=google&utm_medium=maps&utm_campaign=mirum-BACIMB2",
+      "wheelchair_accessible_entrance" : true
+   },
+   "status" : "OK"
+}
