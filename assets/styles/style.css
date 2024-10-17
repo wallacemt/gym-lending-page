@@ -52,12 +52,14 @@ header #logo {
     cursor: pointer;
 }
 
+
+
 header nav ul {
     list-style: none;
+    padding: 20px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+    flex-direction: row;
+    gap: 20px;
 }
 
 header nav ul li a {
