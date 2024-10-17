@@ -47,7 +47,7 @@ header.scrolled {
 
 header #logo {
     height: 32px;
-    width: 120.251px;
+    width: 120px;
     flex-shrink: 0;
     cursor: pointer;
 }
@@ -177,6 +177,7 @@ header nav ul li a:hover {
 .start-btn2 {
     display: inline-flex;
     background-color: transparent;
+    justify-content: center;
     margin-top: 10px;
     padding: 24px 40px;
     align-items: flex-start;
@@ -475,12 +476,11 @@ header nav ul li a:hover {
     align-items: center;
     position: relative;
     height: 100vh;
-    margin-top: 100px;
     padding-left: 50px;
 }
 
 .form-back {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     z-index: 0;
@@ -490,11 +490,10 @@ header nav ul li a:hover {
 
 .form-box {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 20%;
+    top: 50px;
     z-index: 1;
     max-width: 500px;
-    width: 100%;
 }
 
 
@@ -537,14 +536,36 @@ form {
     padding: 20px;
     border-radius: 8px;
     gap: 20px;
+    transition: 1s ease;
+}
+
+.form-row{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+form label {
+    color: var(--default);
+    font-family: var(--font-sec);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
 }
 
 form input {
-    display: inline-flex;
+    flex: 1;
+    display: flex;
     border: 1px solid var(--default);
-    padding: 16px 24px;
+    padding: 20px 50px;
     align-items: center;
     background-color: transparent;
+    border-radius: 8px;
+}
+
+form input[type="email"] {
+    width: 100%;
 }
 
 form input::placeholder {
@@ -556,14 +577,84 @@ form input::placeholder {
     line-height: 24px;
 }
 
+form input:focus {
+    color: var(--default);
+    font-size: 16px;
+    transition: 1s ease;
+}
+
+form input:not(:focus) {
+    color: var(--default);
+    font-size: 16px;
+}
+
 .form-img {
     position: absolute;
     background-image: url(../img/form-img.png);
     right: 55%;
-    height: 870px;
+    height: 600px;
     width: 500px;
     background-size: cover;
     background-position: center;
-    transform: rotate(1.588deg);
-    margin-bottom: 140px;
+    transform: rotate(1.588deg) scale(1.3);
+    bottom: 14vh;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    color: var(--default);
+    font-family: var(--font-sec);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    padding-top: 10px;
+}
+
+
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: var(--default);
+    font-family: var(--font-def);
+    text-decoration: none;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+.footer-links a:hover {
+    color: var(--destaque);
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid #484848;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+.footer-social ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    filter: invert();
 }

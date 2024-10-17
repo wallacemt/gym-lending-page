@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iron Gym</title>
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/reponsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -24,6 +26,12 @@
                 </ul>
             </nav>
             <button class="start-btn">Começar agora</button>
+            <div class="nav_bar">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3_h"></div>
+                <div class="bar4"></div>
+            </div>
         </header>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -146,22 +154,60 @@
                     <p>Ganhe 50% de desconto nas três primeiras aulas em que você se inscrever este mês em qualquer
                         associação ao GYM</p>
                     <form action="">
-                        <input type="text" id="name" name="name" placeholder="Digite seu nome..." required>
-
-                        <input type="tel" id="phone" name="phone" required placeholder="Numero de telefone">
-
-                        <input type="email" id="email" name="email" required placeholder="Seu email">
-
+                        <div class="form-row">
+                            <div>
+                                <label for="name">Nome:</label>
+                                <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                            </div>
+                            <div>
+                                <label for="phone">Telefone:</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(XX) XXXXX-XXXX">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="Seu Melhor Email">
+                        </div>
+                        
                         <button type="submit" class="start-btn2">Começar agora</button>
-                    </form>
+                    </form>                        
                 </div>
             </div>
         </section>
     </main>
 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="#"><img src="./assets/img/logo.svg" alt="Logo da pagina" id="logo"></a>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Avaliações</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <p>Privacy | Terms & Conditions</p>
+                <p>&copy; 2024 All Rights Reserved IronGym Company</p>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/scripts/srcipts.js"></script>
+
     <script src="./assets/scripts/frameworks/script.js"></script>
 </body>
 

@@ -2,10 +2,10 @@
 let swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-    },
+    // autoplay: {
+    //     delay: 2000,
+    //     disableOnInteraction: false,
+    // },
 
     navigation: {
         nextEl: ".swiper-button-next",
@@ -41,9 +41,9 @@ const swiperAvaliacoes = new Swiper('.swiper-container-reviews', {
             spaceBetween: 20,
         },
     },
-    autoplay: {
-        delay: 2000,
-    },
+    // autoplay: {
+    //     delay: 5000,
+    // },
 });
 
 AOS.init();
