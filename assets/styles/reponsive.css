@@ -74,7 +74,10 @@
 
 
 
-@media (max-width: 768px) {
+@media (width < 768px) {
+    body{
+        overflow-x: hidden !important;
+    }
     .nav_bar{
         display: flex;
     }
