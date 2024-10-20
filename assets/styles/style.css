@@ -25,10 +25,10 @@
 }
 
 body {
+    overflow-x: hidden;
     height: 100vh;
     background-color: #000;
     font-family: var(--font-def);
-    overflow-x: hidden;
 }
 
 .container {
