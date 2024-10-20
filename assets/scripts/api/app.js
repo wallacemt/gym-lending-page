@@ -38,7 +38,7 @@ function populateReviewCard(review) {
     reviewClient.classList.add('review-client');
     const clientImg = document.createElement('img');
     clientImg.classList.add('client-img');
-    clientImg.src = review.profile_photo_url || 'path/to/default-avatar.jpg'; 
+    clientImg.src = review.profile_photo_url; 
     reviewClient.appendChild(clientImg);
 
     reviewCardTemplate.appendChild(reviewText);
@@ -52,12 +52,11 @@ function populateReviewCard(review) {
 
 async function fetchPlaceDetails() {
     try {
-        const response = await fetch('./assets/scripts/reviews.json');
+        const response = await fetch('./assets/scripts/api/reviews.json');
         const data = await response.json();
 
         if (data.result.reviews) {
             let reviews = data.result.reviews;
-            console.log(reviews)
             for (let review of reviews) {
                 if (review.text.length > 20 && review.rating > 3) {
                     populateReviewCard(review);

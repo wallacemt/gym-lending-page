@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iron Gym</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="./assets/styles/reponsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -19,10 +20,10 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Avaliações</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#choose">Serviços</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#reviews">Avaliações</a></li>
+                    <li><a href="#form">Contato</a></li>
                 </ul>
             </nav>
             <button class="start-btn" id="start-btn">Começar agora</button>
@@ -35,36 +36,40 @@
         </header>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide banner"><img src="./assets/img/slide-2.jpg" alt="Imagem do carrosel"></div>
-                <div class="swiper-slide banner"><img src="./assets/img/slide-1.jpg" alt="Imagem do carrosel"></div>
-                <div class="swiper-slide banner"><img src="./assets/img/slide-3.jpg" alt="Imagem do carrosel "></div>
-                <div class="swiper-slide banner"><img src="./assets/img/slide-4.jpg" alt="Imagem do carrosel "></div>
+                <div class="swiper-slide banner"><img src="./assets/img/slide/slide-2.jpg" alt="Imagem do carrosel"></div>
+                <div class="swiper-slide banner"><img src="./assets/img/slide/slide-1.jpg" alt="Imagem do carrosel"></div>
+                <div class="swiper-slide banner"><img src="./assets/img/slide/slide-3.jpg" alt="Imagem do carrosel "></div>
+                <div class="swiper-slide banner"><img src="./assets/img/slide/slide-4.jpg" alt="Imagem do carrosel "></div>
             </div>
         </div>
         <div class="msg-container" data-aos="fade-up" data-aos-duration="3000">
-            <h1>PRONTO PARA TREINAR <br><span>SEU CORPO</span></h1>
-            <p>O treinamento de ginástica é uma abordagem estruturada e disciplinada ao exercício físico que se
+            <h1>PRONTO PARA</h1>
+            <h1>TREINAR</h1>
+            <h1><span>SEU CORPO</span></h1>
+            <p id="down">O treinamento de ginástica é uma abordagem estruturada e disciplinada ao exercício físico que se
                 concentra na força,
                 resistência e melhoria geral do condicionamento físico.</p>
             <button class="start-btn2">Quero Começar Agora</button><br>
 
-            <div class="msg-info">
-                <p>20+</p>
-                <p>Anos de Experiencia</p>
-            </div>
-            <div class="msg-info">
-                <p>15K+</p>
-                <p>Membros Satisfeitos</p>
-            </div>
-            <div class="msg-info">
-                <p>14K+</p>
-                <p>Membros Satisfeitos</p>
+            <div class="msg-info-container">
+                <div class="msg-info">
+                    <p>20+</p>
+                    <p>Anos de Experiencia</p>
+                </div>
+                <div class="msg-info">
+                    <p>15K+</p>
+                    <p>Membros Inscritos</p>
+                </div>
+                <div class="msg-info">
+                    <p>14K+</p>
+                    <p>Membros Satisfeitos</p>
+                </div>
             </div>
         </div>
     </div>
 
     <main>
-        <section class="choose-us" data-aos="zoom-in" data-aos-duration="2000">
+        <section class="choose-us" id="choose" data-aos="zoom-in" data-aos-duration="2000">
             <h2>Por que <span>nos escolher</span></h2>
             <p id="up">Os treinos de academia oferecem uma experiência versátil e personalizável, permitindo que todos
                 estabeleçam metas de condicionamento físico específicas.</p>
@@ -97,7 +102,7 @@
 
         </section>
 
-        <section class="about-us">
+        <section class="about-us" id="about" data-aos="fade-right" data-aos-duration="2000">
             <div class="about-us-container">
                 <div class="about-us-image">
                     <img src="./assets/img/about.png" alt="Placeholder Image" />
@@ -125,7 +130,7 @@
             </div>
         </section>
 
-        <section class="avaliacoes">
+        <section class="avaliacoes" id="reviews" data-aos="fade-left" data-aos-duration="2000">
 
             <div class="avaliacoes-title">
                 <h2>O Que Nossos <span class="text-red">Clientes Dizem</span></h2>
@@ -140,38 +145,33 @@
         </section>
 
 
-        <section class="cta-container">
-            <svg class="form-back" xmlns="http://www.w3.org/2000/svg" width="1228" height="674" viewBox="0 0 1228 674"
-                fill="none">
-                <path d="M80.4431 641.513L0.566224 1.49954L1227.42 0.500475L1123.57 673.487L80.4431 641.513Z"
-                    fill="black" stroke="red" />
-            </svg>
-            <div class="form-img"></div> 
-
+        <section  class="cta-container" id="form" data-aos="zoom-in" data-aos-duration="2000">
             <div class="form-box">
                 <div class="form-container">
                     <h2>Comece a <span>treinar Agora</span></h2>
                     <p>Ganhe 50% de desconto nas três primeiras aulas em que você se inscrever este mês em qualquer
                         associação ao GYM</p>
-                    <form action="">
-                        <div class="form-row">
-                            <div>
-                                <label for="name">Nome:</label>
-                                <input type="text" id="name" name="name" placeholder="Seu Nome" required>
-                            </div>
-                            <div>
-                                <label for="phone">Telefone:</label>
-                                <input type="tel" id="phone" name="phone" required placeholder="(XX) XXXXX-XXXX">
-                            </div>
-                        </div>
+                        <form id="contact-form" novalidate>
+                            <div class="error-container" aria-live="polite"></div>
                         
-                        <div>
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required placeholder="Seu Melhor Email">
-                        </div>
-                        
-                        <button type="submit" class="start-btn2">Começar agora</button>
-                    </form>                        
+                            <div class="form-row">
+                                <div>
+                                    <label for="name">Nome:</label>
+                                    <input type="text" id="name" name="name" placeholder="Seu Nome" required>
+                                </div>
+                                <div>
+                                    <label for="phone">Telefone:</label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="(XX) XXXXX-XXXX">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required placeholder="Seu Melhor Email">
+                            </div>
+                            
+                            <button type="submit" class="start-btn2">Começar agora</button>
+                        </form>              
                 </div>
             </div>
         </section>
@@ -181,15 +181,6 @@
         <div class="footer-container">
             <div class="footer-logo">
                 <a href="#"><img src="./assets/img/logo.svg" alt="Logo da pagina" id="logo"></a>
-            </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Avaliações</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
             </div>
             <div class="footer-social">
                 <p>Privacy | Terms & Conditions</p>
@@ -205,6 +196,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/scripts/api/app.js"></script>
     <script src="./assets/scripts/responsive/index.js"></script>

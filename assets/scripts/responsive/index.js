@@ -11,6 +11,7 @@ const toggleMenu = () => {
 
 const handleResize = () => {
     const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
     if (windowWidth > 768) {
         nav.classList.remove('responsive');
         hButton.style.display = 'inline-block';
@@ -18,8 +19,7 @@ const handleResize = () => {
         if (!document.querySelector('header').contains(hButton)) {
             document.querySelector('header').appendChild(hButton);
         }
-
-    } else {
+    }else {
         hButton.style.display = 'none';
     }
 };
