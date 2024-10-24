@@ -170,6 +170,7 @@ header nav ul li a:hover {
 }
 
 .msg-container {
+    overflow: hidden;
     position: relative;
     z-index: 1;
     text-align: center;
@@ -266,6 +267,7 @@ header nav ul li a:hover {
 }
 
 .choose-us {
+    overflow: hidden;
     background: #0c0c0c;
     padding: 30px;
     border-top: 1px solid #fff;
@@ -350,6 +352,7 @@ header nav ul li a:hover {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .about-us-container {
@@ -424,6 +427,7 @@ header nav ul li a:hover {
     background-repeat: no-repeat;
     padding: 30px;
     height: auto;
+    overflow: hidden;
 }
 
 .avaliacoes-title h2 {
@@ -520,6 +524,7 @@ header nav ul li a:hover {
     height: auto;
     align-items: flex-start;
     justify-content: center;
+    overflow: hidden;
 }
 .cta-container::before{
     content: "";
@@ -649,6 +654,7 @@ footer {
     line-height: 24px;
     padding-top: 10px;
 }
+
 
 
 .footer-logo {

@@ -63,7 +63,7 @@ const inputs = form.querySelectorAll('input');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-
+    
     const name = inputs[0].value.trim();
     const phone = inputs[1].value.trim();
     const email = inputs[2].value.trim();
@@ -97,21 +97,42 @@ form.addEventListener('submit', (e) => {
 
         errorContainer.innerHTML = errors.map(error => `<p>${error}</p>`).join('');
     } else {
-        
+        const button = form.querySelector('button');
+        button.disabled = true;
+        button.classList.add('loading');
+        button.innerHTML = `<i class="fa fa-spinner fa-spin"></i> Enviando...`;
+
         emailjs.send("service_8tyd3ne", "template_79kq11b", {
             from_name: name,
             from_email: email,
             from_phone: formattedPhone
         })
         .then(function(response) {
-            alert("Mensagem enviada com sucesso!");
+            setTimeout(() => {
+                button.disabled = false;
+                button.classList.remove('loading');
+                button.innerHTML = 'Começar Agora';
+                
+                const successMessage = document.createElement('p');
+                successMessage.textContent = 'Mensagem enviada com sucesso!';
+                successMessage.style.color = 'green';
+                form.appendChild(successMessage);
+
+                setTimeout(() => {
+                    successMessage.remove();
+                    button.style.background = '';
+                }, 2000);
+            }, 3000);
             console.log("SUCCESS!", response.status, response.text);
             form.reset();
         }, function(error) {
-            alert("Erro ao enviar a mensagem. Tente novamente.");
+            setTimeout(() => {
+                button.disabled = false;
+                button.classList.remove('loading');
+                button.innerHTML = 'Enviar';
+            }, 1000);
             console.log("FAILED...", error);
         });
     }
 });
-
   
