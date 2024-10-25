@@ -261,6 +261,7 @@ header nav ul li a:hover {
 }
 
 .choose-us-card-container {
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -356,6 +357,7 @@ header nav ul li a:hover {
 }
 
 .about-us-container {
+    overflow: hidden;
     height: auto;
     width: auto;
     display: flex;
@@ -527,6 +529,7 @@ header nav ul li a:hover {
     overflow: hidden;
 }
 .cta-container::before{
+    overflow: hidden;
     content: "";
     position: absolute;
     top: 0;
@@ -543,6 +546,7 @@ header nav ul li a:hover {
 
 
 .form-container {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -576,6 +580,7 @@ header nav ul li a:hover {
 }
 
 form {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     padding: 20px;
